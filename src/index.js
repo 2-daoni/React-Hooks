@@ -6,5 +6,6 @@ import Practice from './useTabs';
 import Practice2 from './useEffect';
 import Practice3 from './useClick';
 import Practice4 from './useHover';
+import Practice5 from './useConfirm';
 
-ReactDOM.render(<Practice4 />, document.getElementById('root'));
+ReactDOM.render(<Practice5 />, document.getElementById('root'));
