@@ -1,12 +1,30 @@
 import React, { useEffect, useRef, useState } from 'react';
 
+const useClick = (onClick) => {
+  const element = useRef();
+
+  useEffect(() => {
+    if (element.current) {
+      element.current.addEventListener('click', onClick);
+    }
+    return () => {
+      if (element.current) {
+        element.current.removeEventListener('click', onClick);
+      }
+    };
+  }, []);
+if (typeof onClick !== 'function') {
+  return;
+}
+  return element;
+};
+
 const Practice3 = () => {
-  const refPractice = useRef();
-  setTimeout(() => refPractice.current.focus(), 5000);
+  const sayHello = () => console.log('안뇽!');
+  const title = useClick(sayHello);
   return (
     <div>
-      <div>Hi</div>
-      <input ref={refPractice} placeholder="공부" />
+      <h1 ref={title}>Hi</h1>
     </div>
   );
 };
