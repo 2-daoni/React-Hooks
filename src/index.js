@@ -14,5 +14,6 @@ import Practice9 from './useNetwork';
 import Practice10 from './useScroll';
 import Practice11 from './useFullScreen';
 import Practice12 from './useNotification';
+import Practice13 from './useAxios';
 
-ReactDOM.render(<Practice12 />, document.getElementById('root'));
+ReactDOM.render(<Practice13 />, document.getElementById('root'));
