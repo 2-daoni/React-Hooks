@@ -8,5 +8,6 @@ import Practice3 from './useClick';
 import Practice4 from './useHover';
 import Practice5 from './useConfirm';
 import Practice6 from './usePreventLeave';
+import Practice7 from './useBeforeLeave';
 
-ReactDOM.render(<Practice6 />, document.getElementById('root'));
+ReactDOM.render(<Practice7 />, document.getElementById('root'));
