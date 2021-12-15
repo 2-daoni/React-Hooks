@@ -12,5 +12,6 @@ import Practice7 from './useBeforeLeave';
 import Practice8 from './useFadeIn';
 import Practice9 from './useNetwork';
 import Practice10 from './useScroll';
+import Practice11 from './useFullScreen';
 
-ReactDOM.render(<Practice10 />, document.getElementById('root'));
+ReactDOM.render(<Practice11 />, document.getElementById('root'));
